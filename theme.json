@@ -1,0 +1,208 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "620px",
+			"wideSize": "1200px"
+		},
+		"color": {
+			"custom": false,
+			"customGradient": false,
+			"defaultColors": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"palette": [
+				{
+					"name": "Blue",
+					"slug": "custom-bl-blue",
+					"color": "#232F47"
+				},
+				{
+					"name": "Red",
+					"slug": "custom-bl-red",
+					"color": "#E8614D"
+				},
+				{
+					"name": "White",
+					"slug": "custom-bl-white",
+					"color": "#FEFEFE"
+				},
+				{
+					"name": "Black", 
+					"slug": "custom-bl-black",
+					"color": "#211E1A"
+				},
+				{
+					"name": "Parchment",
+					"slug": "custom-bl-parchment",
+					"color": "#EEEBEB"
+				},
+				{
+					"name": "Cream",
+					"slug": "custom-bl-cream",
+					"color": "#F8F9FA"
+				},
+				{
+					"name": "Charcoal", 
+					"slug": "custom-bl-charcoal", 
+					"color": "#424242"
+				}
+			]
+		},
+		"spacing": {
+			"customSpacingSize": false,
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"name": "1",
+					"slug": "10",
+					"size": "0.25rem"
+				},
+				{
+					"name": "2",
+					"slug": "20",
+					"size": "0.5rem"
+				},
+				{
+					"name": "3",
+					"slug": "30",
+					"size": "1rem"
+				},
+				{
+					"name": "4",
+					"slug": "40",
+					"size": "1.5rem"
+				},
+				{
+					"name": "5",
+					"slug": "50",
+					"size": "2rem"
+				},
+				{
+					"name": "6",
+					"slug": "60",
+					"size": "3rem"
+				},
+				{
+					"name": "7",
+					"slug": "70",
+					"size": "4rem"
+				},
+				{
+					"name": "8",
+					"slug": "80",
+					"size": "8rem"
+				},
+				{
+					"name": "Section vertical",
+					"slug": "section-v",
+					"size": "clamp(3rem, 7vw, 6rem)"
+				},
+				{
+					"name": "Section horizontal",
+					"slug": "section-h",
+					"size": "clamp(1.5rem, 8vw, 8rem)"
+				}
+			],
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "'DM Sans', sans-serif",
+					"name": "DM Sans",
+					"slug": "dm-sans"
+				},
+				{
+					"fontFamily": "'Cormorant Garamond', Georgia, serif",
+					"name": "Cormorant Garamond",
+					"slug": "cormorant-garamond"
+				},
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Small",
+					"slug": "small",
+					"size": "0.75rem"
+				},
+				{
+					"name": "Normal",
+					"slug": "normal",
+					"size": "1rem"
+				},
+				{
+					"name": "Medium",
+					"slug": "medium",
+					"size": "1.25rem"
+				},
+				{
+					"name": "Large",
+					"slug": "large",
+					"size": "1.5rem"
+				},
+				{
+					"name": "Extra Large",
+					"slug": "x-large",
+					"size": "2rem"
+				},
+				{
+					"name": "2X Large",
+					"slug": "xx-large",
+					"size": "3rem"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--dm-sans)",
+			"fontSize": "1rem",
+			"lineHeight": "1.6"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--cormorant-garamond)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			},
+			"button": {
+				"border": {
+					"radius": "12px"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
+}
