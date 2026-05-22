@@ -36,6 +36,17 @@ video {
 	--bl-border-radius: 0.875rem;
 }
 
+h2 {
+	margin-bottom: 0.5rem;
+}
+
+.bl-note {
+	font-weight: 600;
+	font-size: 0.875rem;
+	color: var(--wp--preset--color--custom-bl-charcoal);
+	margin: 1rem 0;
+}
+
 /* Buttons */
 .bl-btn,
 .bl-btn>a {
@@ -47,14 +58,19 @@ video {
 	border: 1px solid transparent;
 }
 
-.bl-btn.red,
-.bl-btn.red a {
-	background-color: var(--wp--preset--color--custom-bl-red);
+.bl-btn.secondary,
+.bl-btn.secondary a {
+	background-color: var(--wp--preset--color--custom-bl-secondary);
 }
 
-.bl-btn.blue,
-.bl-btn.blue a {
-	background-color: var(--wp--preset--color--custom-bl-blue);
+.bl-btn.primary,
+.bl-btn.primary a {
+	background-color: var(--wp--preset--color--custom-bl-primary);
+}
+
+.bl-btn.charcoal,
+.bl-btn.charcoal a {
+	background-color: var(--wp--preset--color--custom-bl-charcoal);
 }
 
 .bl-btn.outline:not(:has(a)),
@@ -66,11 +82,11 @@ video {
 
 /* --- Hero --- */
 .bl-hero {
-	background-image: linear-gradient(110deg, var(--wp--preset--color--custom-bl-prussian-) 11.3%, #232F47 99.3%);
+	background-image: linear-gradient(110deg, var(--wp--preset--color--custom-bl-primary-) 11.3%, #232F47 99.3%);
 }
 
 .bl-emphasis {
-	color: var(--wp--preset--color--custom-bl-red);
+	color: var(--wp--preset--color--custom-bl-secondary);
 	font-style: italic;
 }
 
@@ -80,7 +96,7 @@ video {
 	font-weight: 600;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
-	color: var(--wp--preset--color--custom-bl-red);
+	color: var(--wp--preset--color--custom-bl-secondary);
 	margin-bottom: 0.5rem;
 }
 
@@ -88,7 +104,7 @@ video {
 	font-family: var(--wp--preset--font-family--cormorant-garamond);
 	font-size: clamp(32px, 3.5vw, 48px);
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 	line-height: 1.15;
 	letter-spacing: -0.02em;
 	margin-bottom: 1rem;
@@ -96,7 +112,7 @@ video {
 
 .section-sub {
 	line-height: 1.65;
-	color: var(--wp--preset--color--custom-bl-dim-grey);
+	color: var(--wp--preset--color--custom-bl-charcoal);
 	max-width: 50%;
 }
 
@@ -110,7 +126,7 @@ video {
 }
 
 .step-card {
-	background: #fff;
+	background: var(--wp--preset--color--custom-bl-white);
 	border-radius: var(--bl-border-radius);
 	padding: 2rem;
 	box-shadow: 0 2px 8px rgba(26, 20, 16, 0.07);
@@ -126,7 +142,7 @@ video {
 	font-family: var(--wp--preset--font-family--cormorant-garamond);
 	font-size: 3rem;
 	font-weight: 700;
-	color: var(--wp--preset--color--custom-bl-dim-grey);
+	color: var(--wp--preset--color--custom-bl-charcoal);
 	line-height: 1;
 	margin-bottom: 1.5rem;
 	margin-top: 0;
@@ -134,14 +150,14 @@ video {
 
 .step-title {
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 	margin-bottom: 0.5rem;
 }
 
 .step-body {
 	font-size: 0.875rem;
 	line-height: 1.65;
-	color: var(--wp--preset--color--custom-bl-dim-grey);
+	color: var(--wp--preset--color--custom-bl-charcoal);
 }
 
 /* --- Why cards --- */
@@ -154,7 +170,7 @@ video {
 }
 
 .why-card {
-	background: #fff;
+	background: var(--wp--preset--color--custom-bl-white);
 	border-radius: var(--bl-border-radius);
 	padding: 2rem;
 	box-shadow: 0 2px 8px rgba(26, 20, 16, 0.07);
@@ -173,7 +189,7 @@ video {
 	width: 3rem;
 	height: 3rem;
 	border-radius: var(--bl-border-radius);
-	background: #FFF0EE;
+	background: var(--wp--preset--color--custom-bl-light-secondary);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -182,14 +198,14 @@ video {
 
 .why-title {
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 	margin-bottom: 0.5rem;
 	margin-top: 0;
 }
 
 .why-body {
 	line-height: 1.65;
-	color: var(--wp--preset--color--custom-bl-dim-grey);
+	color: var(--wp--preset--color--custom-bl-charcoal);
 }
 
 /* --- Course cards --- */
@@ -202,7 +218,7 @@ video {
 }
 
 .course-card {
-	background: #fff;
+	background: var(--wp--preset--color--custom-bl-white);
 	border-radius: var(--bl-border-radius);
 	overflow: hidden;
 	box-shadow: 0 2px 8px rgba(26, 20, 16, 0.07);
@@ -219,14 +235,11 @@ video {
 
 .course-card-top {
 	height: 8px;
+	background-color: var(--wp--preset--color--custom-bl-primary);
 }
 
-.course-card-top-red {
-	background-color: var(--wp--preset--color--custom-bl-red);
-}
-
-.course-card-top-blue {
-	background-color: var(--wp--preset--color--custom-bl-blue);
+.course-card-top.coming-soon {
+	background-color: var(--wp--preset--color--custom-bl-secondary);
 }
 
 .course-card-body {
@@ -252,21 +265,21 @@ video {
 	margin-bottom: 14px;
 }
 
-.course-badge-red {
-	background: #FFF0EE;
-	color: var(--wp--preset--color--custom-bl-red);
+.course-badge.secondary {
+	background: var(--wp--preset--color--custom-bl-light-secondary);
+	color: var(--wp--preset--color--custom-bl-secondary);
 }
 
-.course-badge-blue {
-	background: #E6EAEC;
-	color: var(--wp--preset--color--custom-bl-blue);
+.course-badge.primary {
+	background: var(--wp--preset--color--custom-bl-light-primary);
+	color: var(--wp--preset--color--custom-bl-primary);
 }
 
 .course-name {
 	font-family: var(--wp--preset--font-family--cormorant-garamond);
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 	margin-bottom: 8px;
 	line-height: 1.25;
 }
@@ -274,7 +287,7 @@ video {
 .course-desc {
 	font-size: 0.875rem;
 	line-height: 1.6;
-	color: var(--wp--preset--color--custom-bl-dim-grey);
+	color: var(--wp--preset--color--custom-bl-charcoal);
 	margin-bottom: 20px;
 }
 
@@ -295,13 +308,13 @@ video {
 .course-price {
 	font-size: 18px;
 	font-weight: 700;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 }
 
 .course-cta {
 	font-size: 13px;
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-dim-grey);
+	color: var(--wp--preset--color--custom-bl-charcoal);
 	display: flex;
 	align-items: center;
 	gap: 4px;
@@ -309,7 +322,7 @@ video {
 
 /* --- Course Pages --- */
 .course-hero {
-	background: var(--wp--preset--color--custom-bl-blue);
+	background: var(--wp--preset--color--custom-bl-primary);
 	padding: 4rem 10%;
 }
 
@@ -327,9 +340,8 @@ video {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.5rem;
-	background: rgba(232, 97, 77, 0.2);
-	border: 1px solid rgba(232, 97, 77, 0.35);
-	color: #FFA58A;
+	border: 1px solid var(--wp--preset--color--custom-bl-secondary);
+	color: var(--wp--preset--color--custom-bl-lightish-secondary);
 	font-size: 0.75rem;
 	font-weight: 600;
 	letter-spacing: 0.05em;
@@ -367,9 +379,9 @@ video {
 	display: flex;
 	align-items: center;
 	gap: 5px;
-	background: rgba(250, 246, 238, 0.08);
+	background: var(--wp--preset--color--custom-bl-lightish-primary);
 	border: 1px solid rgba(250, 246, 238, 0.12);
-	color: #C8BFB5;
+	color: var(--wp--preset--color--custom-bl-white);
 	font-size: 0.75rem;
 	padding: 0.5rem 1rem;
 	border-radius: 999px;
@@ -393,28 +405,28 @@ video {
 	font-family: 'Cormorant Garamond', Georgia, serif;
 	font-size: 3rem;
 	font-weight: 700;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 }
 
 .booking-price-period {
-	color: var(--wp--preset--color--custom-bl-dim-grey);
+	color: var(--wp--preset--color--custom-bl-charcoal);
 }
 
 .booking-rate {
-	color: var(--wp--preset--color--custom-bl-dim-grey);
+	color: var(--wp--preset--color--custom-bl-charcoal);
 	margin-bottom: 1.5rem;
 }
 
 .booking-slots {
-	background: #FFF0EE;
-	border-radius: var(--bl-border-radius)m;
+	background: var(--wp--preset--color--custom-bl-light-secondary);
+	border-radius: var(--bl-border-radius);
 	padding: 0.5rem 1rem;
 	margin-bottom: 1.5rem;
 }
 
 .booking-slots p {
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-red);
+	color: var(--wp--preset--color--custom-bl-secondary);
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
@@ -429,32 +441,22 @@ video {
 }
 
 .time-option {
-	border: 1.5px solid #E8E3D8;
+	border: 0.5px solid var(--wp--preset--color--custom-bl-light-primary);
 	border-radius: var(--bl-border-radius);
-	padding: 12px 16px;
-	cursor: pointer;
+	padding: 1rem;
 	transition: all 150ms;
-}
-
-.time-option:hover {
-	border-color: var(--wp--preset--color--custom-bl-red)
+	box-shadow: 0 2px 8px rgba(26, 20, 16, 0.05);
 }
 
 .time-option-label {
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 }
 
 .time-option-sub {
 	font-size: 12px;
 	color: #6B7280;
 	margin-top: 2px;
-}
-
-
-.time-option.selected {
-	border-color: var(--wp--preset--color--custom-bl-red);
-	background: #FFF0EE;
 }
 
 .booking-trust {
@@ -469,7 +471,7 @@ video {
 	align-items: center;
 	gap: 0.5rem;
 	font-size: 0.75rem;
-	color: #9AA3B8;
+	color: var(--wp--preset--color--custom-bl-charcoal);
 }
 
 .course-body {
@@ -497,23 +499,22 @@ video {
 }
 
 .overview-key {
-	padding: 14px 20px;
-	font-size: 13px;
+	padding: 1rem;
 	font-weight: 600;
-	color: #6B7280;
-	background: #FAF8F2;
+	font-size: 0.875rem;
+	background: var(--wp--preset--color--custom-bl-light-primary);
 	display: flex;
 	align-items: center;
-	gap: 8px;
+	gap: 0.5rem;
+	color: var(--wp--preset--color--custom-bl-charcoal);
 }
 
 .overview-val {
-	padding: 14px 20px;
-	font-size: 14px;
-	color: #0B2D48;
+	padding: 1rem;
 	display: flex;
 	align-items: center;
-	gap: 6px;
+	gap: 0.5rem;
+	font-size: 0.875rem;
 }
 
 .course-content {
@@ -526,6 +527,7 @@ video {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
+	margin-top: 1rem;
 }
 
 .learn-item {
@@ -547,7 +549,7 @@ video {
 
 .learn-item-title {
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 	margin: 1rem 0 0.5rem 0;
 }
 
@@ -560,6 +562,7 @@ video {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	margin-top: 1rem;
 }
 
 .who-item {
@@ -581,6 +584,7 @@ video {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	margin-top: 1rem;
 }
 
 .online-step {
@@ -602,14 +606,14 @@ video {
 	align-items: center;
 	justify-content: center;
 	flex-shrink: 0;
-	color: var(--wp--preset--color--custom-bl-red);
+	color: var(--wp--preset--color--custom-bl-secondary);
 	font-size: 0.875rem;
 	font-weight: 600;
 }
 
 .online-step-title {
 	font-weight: 600;
-	color: var(--wp--preset--color--custom-bl-blue);
+	color: var(--wp--preset--color--custom-bl-primary);
 }
 
 .online-step-body {
@@ -622,9 +626,12 @@ video {
 }
 
 .cancel-box {
-	background: #F2EDE0;
+	background: var(--wp--preset--color--custom-bl-white);
 	border-radius: var(--bl-border-radius);
-	padding: 24px 28px;
+	padding: 1rem;
+	box-shadow: 0 2px 8px rgba(26, 20, 16, 0.05);
+	margin-top: 1rem;
+
 }
 
 .course-sidebar {
@@ -676,7 +683,7 @@ video {
 }
 
 .sidebar-other-item:hover {
-	border-color: var(--wp--preset--color--custom-bl-red)
+	border-color: var(--wp--preset--color--custom-bl-secondary)
 }
 
 .sidebar-other-item-dot {

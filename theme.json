@@ -15,13 +15,13 @@
 			"defaultDuotone": false,
 			"palette": [
 				{
-					"name": "Blue",
-					"slug": "custom-bl-blue",
-					"color": "#232F47"
+					"name": "Primary",
+					"slug": "custom-bl-primary",
+					"color": "#0C2E48"
 				},
 				{
-					"name": "Red",
-					"slug": "custom-bl-red",
+					"name": "Secondary",
+					"slug": "custom-bl-secondary",
 					"color": "#E8614D"
 				},
 				{
@@ -48,6 +48,26 @@
 					"name": "Charcoal", 
 					"slug": "custom-bl-charcoal", 
 					"color": "#424242"
+				}, 
+				{
+					"name": "Lightish Primary", 
+					"slug": "custom-bl-lightish-primary", 
+					"color": "color-mix(in srgb, var(--wp--preset--color--custom-bl-primary) 92%, white)"
+				},
+				{
+					"name": "Lightish Secondary", 
+					"slug": "custom-bl-lightish-secondary", 
+					"color": "color-mix(in srgb, var(--wp--preset--color--custom-bl-secondary) 92%, white)"
+				},
+				{
+					"name": "Light Primary", 
+					"slug": "custom-bl-light-primary", 
+					"color": "color-mix(in srgb, var(--wp--preset--color--custom-bl-primary) 10%, white)"
+				},
+				{
+					"name": "Light Secondary", 
+					"slug": "custom-bl-light-secondary", 
+					"color": "color-mix(in srgb, var(--wp--preset--color--custom-bl-secondary) 10%, white)"
 				}
 			]
 		},
